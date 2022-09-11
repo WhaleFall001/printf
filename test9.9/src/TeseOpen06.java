@@ -14,7 +14,7 @@ public class TeseOpen06 {
         //定义年龄
         int age;
         //定义性别
-        int sex;
+        char sex;
         //获取年龄,性别
         System.out.println("请输入你的年龄");
         Scanner sc=new Scanner(System.in);
@@ -24,10 +24,12 @@ public class TeseOpen06 {
             System.out.println("可以搬桌子");
         }
         else if(age>5){
-            System.out.println("请输入你的性别  1男生    0女生");
-            Scanner sc1=new Scanner(System.in);
-            sex=sc.nextInt();
-            if(sex==1){
+            System.out.println("请输入你的性别  男    女");
+//            Scanner sc1=new Scanner(System.in);
+//            sex=sc.nextInt();
+            String str=sc.next();
+            sex=str.charAt(0);
+            if(sex=='男'){
                 System.out.println("你可以搬桌子");
             }
             else {
